@@ -1,0 +1,17 @@
+{
+  "name": "YouTube Speed Control",
+  "version": "1.0",
+  "description": "Provides keyboard shortcuts to change the speed of YouTube videos.",
+  "manifest_version": 2,
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["speedUp.js"]
+    }
+  ]
+}
